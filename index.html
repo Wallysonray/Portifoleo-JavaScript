@@ -1,101 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <!-- Ray wallyson Rodrigues De Oliveira RA: 241002168 -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Percepção e Psicologia das Cores</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/cores.ico" type="image/x-icon" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Rodrigues</title>
+    <link rel="shortcut icon" href="img/pngegg.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
 
-  <body>
-    <h1>Percepção das cores</h1>
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
 
-    <p>
-      A cor é percebida através dos cones na nossa visão. Existem no olho cerca
-      de seis milhões de cones e a ausência ou deficiência dos cones causa o
-      daltonismo. A cor representa uma percepção para o cérebro e o estimula a
-      diferenciar uma cor da outra. Assim, o cérebro aprende a corrigir a cor
-      dos objetos, ou seja, se usar um óculos escuro, ao tirá-lo o cérebro
-      mostrará tudo escuro por um tempo até que perceba que deve deixar a
-      correção
-    </p>
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
 
-    <p>
-      Veja mais sobre "A Percepção das Cores" em:
-      <a
-        target="_blank"
-        href="https://brasilescola.uol.com.br/artes/percepcao-das-cores.htm"
-        >Brasil Escola</a
-      >
-    </p>
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-    <p>
-      As cores também podem mudar completamente a noção de espaço dentro da sua
-      casa, você consegue “aumentar” e “diminuir” os cômodos somente com
-      pintura.
-    </p>
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-    <picture>
-      <source
-        media="(max-width:480px )"
-        srcset="img/P_M_G/PercepcaoCores-P.jpg"
-        type="image/jpg"
-      />
-      <source
-        media="(max-width:720px )"
-        srcset="img/P_M_G/PercepcaoCores-M.webp"
-        type="image/webp"
-      />
-      <img src="img/P_M_G/PercepcaoCores-G.png" alt="" />
-    </picture>
+        .search-container {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
 
-    <h1>Psicologia da Cores</h1>
+        input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
 
-    <p>
-      Definir cores ideais para o seu negócio pode fazer a diferença nos seus
-      resultados, já que a psicologia das cores pode influenciar na decisão de
-      compra. Psicologia das Cores consiste em um estudo aprofundado sobre como
-      o cérebro humano identifica as cores existentes e as transforma em
-      sensações ou emoções.
-    </p>
+        button {
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
 
-    <h2>Significados das Cores na Psicologia</h2>
+        button:hover {
+            background: #ccc;
+        }
 
-    <p>
-      A psicologia das cores reconhece emoções primárias nos seres humanos:
-      raiva, medo, tristeza, nojo, surpresa, curiosidade, aceitação e alegria.
-      Cada um desses sentimentos é representado por uma cor, sendo que estas
-      desempenham um papel influenciador no comportamento das pessoas, segundo
-      os estudos da psicologia.
-    </p>
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
 
-    <img src="img/GuiaEmocionalDasCores.webp" alt="Guia Emocional das Cores" />
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
 
-    <h2>Gatilhos emocionais das cores</h2>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            z-index: 1;
+        }
 
-    <img
-      src="img/GatilhosEmocionaisDeCores.webp"
-      alt="Gatilhos emocinais das cores"
-    />
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
 
-    <h2>Vídeo com mais informações.</h2>
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-    <p>
-      Abaixo apresentamos um vídeo do Curso em Vídeo disponível no Youtube sobre
-      o assunto.
-    </p>
-    
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/A8UNBs7nxw4?si=JObF5-B9OVkdFUKQ"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-  </body>
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Media query para telas menores que 768px */
+        @media (max-width: 767.98px) {
+            header, nav {
+                width: 100%;
+            }
+
+            header img {
+                width: 100px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            .search-container {
+                margin: 10px 0;
+            }
+
+            input[type=text], button {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Adicione a tag <img> abaixo para incluir a imagem desejada -->
+    <img src="img/pngegg.png" alt="Logo de Ray Rodrigues" style="width: 150px; height: auto;">
+    <h1>Ray Rodrigues</h1>
+</header>
+
+<nav>
+    <a href="index.html">Página Inicial</a>
+    <div class="dropdown">
+        <button class="dropbtn">Progamação Web</button>
+        <div class="dropdown-content">
+            <a href="progamaçao web.html">HTML</a> <!-- Modificado para linkar para o arquivo html_file.html -->
+            <a href="css.html">CSS</a> <!--para adicionar novos arquivos subistitua # pelo nome do arquivo-->
+            <a href="JavaScript.html">JavaScript</a>
+        </div>
+    </div>
+    <a href="#">Contato</a> <!--aqui da mesmo forma que em CSS e JavaScript subistitua # pelo nome do arquivo-->
+    <div class="search-container">
+        <form action="/search" method="get">
+            <input type="text" placeholder="Pesquisar..." name="search">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</nav>
+
+
+</body>
 </html>
